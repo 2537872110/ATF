@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\OpenCvSharp4.runtime.win.4.9.0.20240103\build\netstandard\OpenCvSharp4.runtime.win.props" Condition="Exists('..\packages\OpenCvSharp4.runtime.win.4.9.0.20240103\build\netstandard\OpenCvSharp4.runtime.win.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{515A4100-7E40-4C99-9283-87A84A9F16A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CSharpUseC__AF_Dll</RootNamespace>
+    <AssemblyName>CSharpUseC++AF_Dll</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="OpenCvSharp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.4.9.0.20240103\lib\netstandard2.0\OpenCvSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenCvSharp.Extensions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6adad1e807fea099, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenCvSharp4.Extensions.4.9.0.20240103\lib\netstandard2.0\OpenCvSharp.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.7.0.0\lib\net462\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFNative.cs" />
+    <Compile Include="ConsoleFeatureSettings.cs" />
+    <Compile Include="FeatureConsoleForm.cs">
+      <!--
+        Keep the root as a Form so Visual Studio renders its safe design-time
+        preview. The feature partials remain code-only and grouped below it.
+      -->
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.Designer.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.MoveGraph.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.SafeClose.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.Scanline.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.ConfigLight.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureConsoleForm.LlcDiagTcp.cs">
+      <DependentUpon>FeatureConsoleForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\MoveGraphView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\MoveGraphView.Designer.cs">
+      <DependentUpon>MoveGraphView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\ScanlineView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\ScanlineView.Designer.cs">
+      <DependentUpon>ScanlineView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\DiagnosticView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\DiagnosticView.Designer.cs">
+      <DependentUpon>DiagnosticView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\TcpView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\TcpView.Designer.cs">
+      <DependentUpon>TcpView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\ConfigView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\ConfigView.Designer.cs">
+      <DependentUpon>ConfigView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\IlluminationView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\IlluminationView.Designer.cs">
+      <DependentUpon>IlluminationView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeatureViews\LlcView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FeatureViews\LlcView.Designer.cs">
+      <DependentUpon>LlcView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeterScaleControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TcpCommandServer.cs" />
+    <Compile Include="Form1.FeatureOperationRecovery.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.ZOutputModeHost.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZOutputModeSelector.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ZOutputModeSelector.Designer.cs">
+      <DependentUpon>ZOutputModeSelector.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeInt32.cs" />
+    <Compile Include="StatusLamp.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MakeZeroForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MakeZeroForm.Designer.cs">
+      <DependentUpon>MakeZeroForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="FeatureViews\ConfigView.resx">
+      <DependentUpon>ConfigView.cs</DependentUpon>
+    </None>
+    <None Include="FeatureViews\IlluminationView.resx">
+      <DependentUpon>IlluminationView.cs</DependentUpon>
+    </None>
+    <None Include="FeatureViews\LlcView.resx">
+      <DependentUpon>LlcView.cs</DependentUpon>
+    </None>
+    <None Include="FeatureViews\ScanlineView.resx">
+      <DependentUpon>ScanlineView.cs</DependentUpon>
+    </None>
+    <None Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </None>
+    <EmbeddedResource Include="FeatureConsoleForm.resx">
+      <LogicalName>CSharpUseC__AF_Dll.FeatureConsoleForm.resources</LogicalName>
+      <ManifestResourceName>CSharpUseC__AF_Dll.FeatureConsoleForm</ManifestResourceName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>此项目缺少所引用的 NuGet 包。请先还原 NuGet 包。缺少文件：{0}</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\OpenCvSharp4.runtime.win.4.9.0.20240103\build\netstandard\OpenCvSharp4.runtime.win.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OpenCvSharp4.runtime.win.4.9.0.20240103\build\netstandard\OpenCvSharp4.runtime.win.props'))" />
+  </Target>
+</Project>

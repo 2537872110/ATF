@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{83d0a3c5-72cf-4015-ad87-b2197f128fcd}</ProjectGuid>
+    <RootNamespace>AF</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Users\TTT\Desktop\eigen-3.4.0;C:\Users\user\Desktop\eigen-3.4.0;C:\Users\HP\Desktop\eigen-3.4.0;C:\Users\Administrator\Desktop\eigen-3.4.0;$(MVCAM_COMMON_RUNENV)\Includes;inc;$(IncludePath)</IncludePath>
+    <ExternalIncludePath>C:\Program Files %28x86%29\MVS\Development\Includes;$(ExternalIncludePath)</ExternalIncludePath>
+    <LibraryPath>C:\Users\quan2\Desktop\ZDevelop3.10.10\64位库\C++ 例程\例程8-总线控制运动\test_BusInit;$(MVCAM_COMMON_RUNENV)\Libraries\win64;lib;$(LibraryPath)</LibraryPath>
+    <OutDir>..\CSharpUseC++AF_Dll\bin\x64\Debug\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>C:\Users\quan2\Desktop\ZDevelop3.10.10\64位库\C++ 例程\例程8-总线控制运动\test_BusInit;C:\Users\quan2\Desktop\eigen-3.4.0\;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <LibraryPath>C:\Users\quan2\Desktop\ZDevelop3.10.10\64位库\C++ 例程\例程8-总线控制运动\test_BusInit;$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>C:\Users\quan2\Desktop\eigen-3.4.0;$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>C:\Users\HP\Desktop\eigen-3.4.0;C:\Users\TTT\Desktop\eigen-3.4.0;C:\Program Files %28x86%29\MVS\Development\Includes;C:\Users\user\Desktop\eigen-3.4.0;C:\Users\Administrator\Desktop\eigen-3.4.0;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\MVS\Development\Libraries\win64;D:\AFSoftware\CSharpUseC++AF_Dll\bin\x64\Release;$(LibraryPath)</LibraryPath>
+    <OutDir>..\CSharpUseC++AF_Dll\bin\x64\Release\</OutDir>
+    <ExternalIncludePath>C:\Program Files %28x86%29\MVS\Development\Libraries\win64;C:\Program Files %28x86%29\MVS\Development\Includes;$(ExternalIncludePath)</ExternalIncludePath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OpenCvRoot>$(ProjectDir)..\third_party\opencv-4.5.0\opencv\build</OpenCvRoot>
+    <IncludePath>$(OpenCvRoot)\include;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Platform)'=='x64'">$(OpenCvRoot)\x64\vc15\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OpenCvRuntime>$(OpenCvRoot)\x64\vc15\bin\opencv_world450d.dll</OpenCvRuntime>
+    <OpenCvRuntimeName>opencv_world450d.dll</OpenCvRuntimeName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OpenCvRuntime>$(OpenCvRoot)\x64\vc15\bin\opencv_world450.dll</OpenCvRuntime>
+    <OpenCvRuntimeName>opencv_world450.dll</OpenCvRuntimeName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;AF_EXPORTS;_WINDOWS;_USRDLL;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4828;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opencv_world450d.lib;MvCameraControl.lib;zauxdll.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;AF_EXPORTS;_WINDOWS;_USRDLL;NOMINMAX;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4828;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>opencv_world450.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;AF_EXPORTS;_WINDOWS;_USRDLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4828;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
+      <ForcedIncludeFiles>MvsSdkCompatibility.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>MvCameraControl.lib;opencv_world450d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;AF_EXPORTS;_WINDOWS;_USRDLL;NOMINMAX;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <DisableSpecificWarnings>4828;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <Optimization>Disabled</Optimization>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatAngleIncludeAsExternal>true</TreatAngleIncludeAsExternal>
+      <ForcedIncludeFiles>MvsSdkCompatibility.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>MvCameraControl.lib;opencv_world450.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AfLensConfigManager.h" />
+    <ClInclude Include="AF_Main.h" />
+    <ClInclude Include="AF_Main_Admin.h" />
+    <ClInclude Include="AF_Internal.h" />
+    <ClInclude Include="AF_PID.h" />
+    <ClInclude Include="AF_SignalProcessor.h" />
+    <ClInclude Include="FocusMode.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="HaiKangCamera.h" />
+    <ClInclude Include="LensParameterStorage_CPP14.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="TTT_AutoFocus.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AfLensConfigManager.cpp" />
+    <ClCompile Include="AF_Main.cpp">
+      <ForcedIncludeFiles>RenameSegmentDataExport.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="AF_Motion.cpp">
+      <ForcedIncludeFiles>RenameMoveZExport.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="AF_Camera.cpp" />
+    <ClCompile Include="AF_Connect.cpp">
+      <ForcedIncludeFiles>RenameSensorCallbackRegistration.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="AF_SignalProcessor.cpp" />
+    <ClCompile Include="AF_SensorFilter.cpp" />
+    <ClCompile Include="AF_Objective.cpp" />
+    <ClCompile Include="AF_Laser.cpp" />
+    <ClCompile Include="AF_Calibration.cpp" />
+    <ClCompile Include="AF_AutoFocus.cpp">
+      <ForcedIncludeFiles>RenameSetFocusMode.h;RenameAutoFocusPublishState.h;RenameAutoFocusMoveZ.h;RenameAutoFocusSensorMapping.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    </ClCompile>
+    <ClCompile Include="AF_AutoFocusState.cpp" />
+    <ClCompile Include="AF_AutoFocusDirectMove.cpp" />
+    <ClCompile Include="AF_SensorMapping.cpp" />
+    <ClCompile Include="AF_SegmentDataMapping.cpp" />
+    <ClCompile Include="AF_GraphMoveDelay.cpp" />
+    <ClCompile Include="AF_FocusModeCache.cpp" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="HaiKangCamera.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TTT_AutoFocus.cpp" />
+  </ItemGroup>
+  <Target Name="CopyOpenCvRuntime" AfterTargets="Build" Condition="'$(Platform)'=='x64'">
+    <MakeDir Directories="$(TargetDir);$(ProjectDir)..\CSharpUseC++AF_DllDemo\libs;$(ProjectDir)..\CSharpUseC++AF_DllDemo\bin\x64\$(Configuration)" />
+    <Copy SourceFiles="$(OpenCvRuntime);$(TargetPath);$(OpenCvRuntime);$(TargetPath);$(OpenCvRuntime)" DestinationFiles="$(TargetDir)$(OpenCvRuntimeName);$(ProjectDir)..\CSharpUseC++AF_DllDemo\libs\AF.dll;$(ProjectDir)..\CSharpUseC++AF_DllDemo\libs\$(OpenCvRuntimeName);$(ProjectDir)..\CSharpUseC++AF_DllDemo\bin\x64\$(Configuration)\AF.dll;$(ProjectDir)..\CSharpUseC++AF_DllDemo\bin\x64\$(Configuration)\$(OpenCvRuntimeName)" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

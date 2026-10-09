@@ -1,0 +1,67 @@
+# 编译产物
+*.o
+*.obj
+*.a
+*.lib
+*.so
+*.exe
+*.out
+*.pdb
+
+# 构建目录
+build/
+
+bin/
+dist/
+release/
+debug/
+cmake-build-*/
+
+# IDE 和编辑器生成的文件
+.vscode/
+.idea/
+.vs/
+*.sdf
+*.suo
+*.ncb
+*.opensdf
+*.VC.db
+*.VC.VC.opendb
+
+# 自动生成的文件
+*.d
+*.gcda
+*.gcno
+*.gcov
+*.orig
+*.rej
+*.swp
+*.swo
+*.lock
+
+# 配置文件
+config.h
+config.tmp
+config.status
+config.cache
+
+# 依赖库
+deps/
+vendor/
+external/
+
+# 测试覆盖率文件
+coverage/
+
+# 日志文件
+*.log
+
+# Repository exclusions for dependencies and generated files
+packages/
+third_party/
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+*.dll
+*.pdb

@@ -1,0 +1,8 @@
+<Project>
+  <ItemGroup>
+    <EmbeddedResource Update="Form1.resx">
+      <LogicalName>CSharpUseC__AF_Dll.Form1.resources</LogicalName>
+      <ManifestResourceName>CSharpUseC__AF_Dll.Form1</ManifestResourceName>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
